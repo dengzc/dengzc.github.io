@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zichen Deng </title>
-    <link>https://example.edu/</link>
+    <link>dengzc.github.io/</link>
     <description>Recent content on Zichen Deng </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://example.edu/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="dengzc.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
