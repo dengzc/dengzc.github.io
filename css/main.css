@@ -201,7 +201,7 @@ ul {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 30%;
+  max-width: 25%;
   height: auto;
   border-radius: 50%;
   /* float: left; */
@@ -257,10 +257,34 @@ ul {
 
 .header .site-affilation .position {
   /* color: #a00; */
+  font-size: 17px;
+  /* display: block; */
+  font-family: Ubuntu;
+  font-weight: mendium;
+}
+
+.header .site-affilation .institute {
+  /* color: #a00; */
+  font-size: 14px;
+  /* display: block; */
+  font-family: Ubuntu;
+  font-weight: bolder;
+}
+
+.header .site-affilation .cat {
+  /* color: #a00; */
   /* font-size: 14px; */
   /* display: block; */
   font-family: Ubuntu;
-  /* font-weight: bolder; */
+  font-weight: bolder;
+}
+
+.header .site-affilation .reference {
+  /* color: #a00; */
+  /* font-size: 14px; */
+  /* display: block; */
+  font-family: Ubuntu;
+  /* font-weight: light; */
 }
 
 .header .site-affilation nav {
@@ -275,7 +299,7 @@ ul {
 
 .email {
   /* color: #a00; */
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Ubuntu Mono";
   font-weight: bolder;
 }
