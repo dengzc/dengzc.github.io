@@ -342,7 +342,10 @@ ul {
 }
 
 .project_description {
- margin: .5em .9em 0em;
+    font-family: "Ubuntu";
+    font-size: 14px;
+    font-weight: light;
+    margin: .5em .9em 0em;
 }
 
 .section .section-header {
