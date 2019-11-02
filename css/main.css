@@ -342,6 +342,7 @@ ul {
 }
 
 .project_description {
+    text-align: justify;
     font-family: "Ubuntu";
     font-size: 14px;
     font-weight: light;
