@@ -6,14 +6,5 @@
     <description>Recent content on Zichen Deng </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="dengzc.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My Post</title>
-      <link>dengzc.github.io/posts/my-post/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>dengzc.github.io/posts/my-post/</guid>
-      <description>This is a test!</description>
-    </item>
-    
   </channel>
 </rss>
