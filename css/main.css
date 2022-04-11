@@ -130,7 +130,7 @@ h6 {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
 }
 
 ul {
@@ -184,7 +184,7 @@ ul {
 }
 
 .wrapper {
-  max-width: 760px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -411,7 +411,7 @@ ul {
 
 
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
   body {
     padding: 20px;
   }
@@ -437,7 +437,7 @@ ul {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   body {
     font-size: 14px;
   }
