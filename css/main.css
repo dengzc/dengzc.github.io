@@ -104,7 +104,7 @@ h6 {
 }
 
 h1 {
-  font-size: 2.75rem;
+  font-size: 2.5rem;
 }
 
 h2 {
@@ -130,7 +130,7 @@ h6 {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 700px;
 }
 
 ul {
@@ -184,7 +184,7 @@ ul {
 }
 
 .wrapper {
-  max-width: 900px;
+  max-width: 840px;
   margin: 0 auto;
 }
 
@@ -201,7 +201,7 @@ ul {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 25%;
+  max-width: 20%;
   height: auto;
   border-radius: 50%;
   /* float: left; */
@@ -257,7 +257,7 @@ ul {
 
 .header .site-affilation .position {
   /* color: #a00; */
-  font-size: 17px;
+  font-size: 14px;
   /* display: block; */
   font-family: Ubuntu;
   font-weight: mendium;
@@ -294,7 +294,7 @@ ul {
 }
 
 .header .site-affilation nav ul svg {
-  max-height: 15px;
+  max-height: 16px;
 }
 
 .email {
@@ -305,19 +305,19 @@ ul {
 }
 
 .collaborators {
-  font-size: 15px;
+  font-size: 14px;
   margin-left: .9em;
   margin-top: .1em;
 }
 
 .news {
-  font-size: 15px;
+  font-size: 14px;
   margin-left: .9em;
   margin-top: .1em;
 }
 
 .year {
-  font-size: 20px;
+  font-size: 14px;
   margin-bottom: -.6em;
 }
 
@@ -337,7 +337,7 @@ ul {
 
 .blog_cv {
     font-family: "Ubuntu Mono";
-    font-size: 17px;
+    font-size: 16px;
     /* margin: 0em .9em 0em; */
 }
 
@@ -411,7 +411,7 @@ ul {
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   body {
     padding: 20px;
   }
