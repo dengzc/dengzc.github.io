@@ -255,6 +255,14 @@ ul {
   font-weight: bolder;
 }
 
+.header .site-affilation .office {
+  /* color: #a00; */
+  font-size: 14px;
+  display: block;
+  font-family: "Ubuntu Mono";
+  font-weight: bolder;
+}
+
 .header .site-affilation .position {
   /* color: #a00; */
   font-size: 14px;
