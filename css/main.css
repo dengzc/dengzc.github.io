@@ -257,10 +257,10 @@ ul {
 
 .header .site-affilation .office {
   /* color: #a00; */
-  font-size: 18px;
-  /* display: block; */
+  font-size: 14px;
+  display: block;
   font-family: "Ubuntu Mono";
-  font-weight: mendium;
+  font-weight: bolder;
 }
 
 .header .site-affilation .position {
