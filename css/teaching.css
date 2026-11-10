@@ -1,0 +1,73 @@
+.teaching-page {
+    margin-top: 1%;
+}
+
+.teaching-introduction {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.teaching-list .course {
+    margin-top: 1.25%;
+}
+
+.teaching-title {
+    font-weight: 600;
+}
+
+.teaching-meta,
+.teaching-description,
+.teaching-links,
+.teaching-resources {
+    font-family: 'Ubuntu Mono', serif;
+}
+
+.teaching-meta,
+.teaching-description,
+.teaching-links {
+    margin-top: .2%;
+}
+
+.teaching-description {
+    font-size: small;
+}
+
+.teaching-title-link:hover {
+    color: #050517;
+    text-decoration: underline;
+}
+
+.teaching-links a,
+.teaching-resources a {
+    padding: .15%;
+}
+
+.teaching-links a:hover,
+.teaching-resources a:hover {
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+
+    border-radius: 50%;
+    background-color: #d64933;
+    color: white;
+}
+
+.resource-link {
+    margin-top: .35rem;
+}
+
+.teaching-single-content {
+    margin-top: 1%;
+}
+
+.about .socials .teaching-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+.about .socials .teaching-icon {
+    width: 24px;
+    height: 24px;
+    stroke-width: 2;
+}

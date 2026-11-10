@@ -1,0 +1,57 @@
+.publication .section-3,
+.paper .section-3,
+.project .section-3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1rem 0.35rem;
+    align-items: flex-start;
+}
+
+.publication .section-3 details,
+.paper .section-3 details,
+.project .section-3 details {
+    display: inline-block;
+}
+
+.publication .section-3 summary,
+.paper .section-3 summary,
+.project .section-3 summary {
+    display: inline-block;
+    cursor: pointer;
+    list-style: none;
+    padding: .15%;
+}
+
+.publication .section-3 summary::-webkit-details-marker,
+.paper .section-3 summary::-webkit-details-marker,
+.project .section-3 summary::-webkit-details-marker {
+    display: none;
+}
+
+.publication .section-3 summary:hover,
+.paper .section-3 summary:hover,
+.project .section-3 summary:hover {
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    border-radius: 50%;
+    background-color: #d64933;
+    color: white;
+}
+
+.publication .section-3 details[open],
+.paper .section-3 details[open],
+.project .section-3 details[open] {
+    display: block;
+    width: 100%;
+    margin-top: .2rem;
+}
+
+.publication .section-3 .media-links,
+.paper .section-3 .media-links,
+.project .section-3 .media-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1rem 0.35rem;
+    margin-top: .2rem;
+}

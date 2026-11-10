@@ -1,12 +1,115 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Zichen Deng - Assistant Professor </title>
-    <link>dengzc.github.io/</link>
-    <description>Recent content on Zichen Deng - Assistant Professor </description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="dengzc.github.io/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
+	<channel>
+		<title>Zichen Deng | Assistant Professor of Economics</title>
+		<link>https://dengzc.github.io/</link>
+		<description>Recent content on Zichen Deng | Assistant Professor of Economics</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 06 Jun 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://dengzc.github.io/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Environmental Econometrics (MSc)</title>
+				<link>https://dengzc.github.io/teaching/environmental-econometrics/</link>
+				<pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://dengzc.github.io/teaching/environmental-econometrics/</guid>
+				<description>MSc Econometrics course on identification strategies, empirical environmental research, and policy evaluation.</description>
+			</item>
+			<item>
+				<title>Natural Resource Economics (MSc)</title>
+				<link>https://dengzc.github.io/teaching/natural-resource-economics-msc/</link>
+				<pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://dengzc.github.io/teaching/natural-resource-economics-msc/</guid>
+				<description>MSc Economics course on economic theory and empirical methods for natural-resource management.</description>
+			</item>
+			<item>
+				<title>Natural Resource Economics (BSc)</title>
+				<link>https://dengzc.github.io/teaching/natural-resource-economics-bsc/</link>
+				<pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://dengzc.github.io/teaching/natural-resource-economics-bsc/</guid>
+				<description>Advanced BSc Economics course on sustainability, resource management, biodiversity, land use, and natural-resource policy.</description>
+			</item>
+			<item>
+				<title>The Relationship Between Earnings and Sexual Orientation: First Evidence From China</title>
+				<link></link>
+				<pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+				<guid></guid>
+				<description>Uses new evidence from China to study earnings differences by sexual orientation.</description>
+			</item>
+			<item>
+				<title>Why Life Gets Better After Age 50, for Some: Mental Well-Being and the Social Norm of Work</title>
+				<link></link>
+				<pubDate>Thu, 31 Jul 2025 00:00:00 +0000</pubDate>
+				<guid></guid>
+				<description>Examines how retirement and work norms shape mental well-being after age 50.</description>
+			</item>
+			<item>
+				<title>China&#39;s Silver Linings Playbook: Evidence From 26,845 Cloud Seeding Operations</title>
+				<link></link>
+				<pubDate>Thu, 03 Jul 2025 00:00:00 +0000</pubDate>
+				<guid></guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Land Rights and the Allocation of Talent</title>
+				<link></link>
+				<pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+				<guid></guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Curriculum and Selection Into the Bureaucracy: Ideology, Information, or Strategic Choices</title>
+				<link></link>
+				<pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
+				<guid></guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Aanvullend geboorteverlof minst gebruikt door lage én hoge inkomens</title>
+				<link>https://dengzc.github.io/research/paid-paternity-leave/</link>
+				<pubDate>Thu, 04 Apr 2024 00:00:00 +0000</pubDate>
+				<guid>https://dengzc.github.io/research/paid-paternity-leave/</guid>
+				<description>English companion page for the Dutch ESB article on take-up of additional birth leave in the Netherlands.</description>
+			</item>
+			<item>
+				<title>Informed Enforcement: Lessons From Pollution Monitoring in China</title>
+				<link></link>
+				<pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+				<guid></guid>
+				<description>Studies how pollution monitoring changes enforcement and environmental outcomes in China.</description>
+			</item>
+			<item>
+				<title>Moving to Cleaner Skies: Age-Specific Effects of Exposure to Pollution on Health and Human Capital</title>
+				<link></link>
+				<pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+				<guid></guid>
+				<description></description>
+			</item>
+			<item>
+				<title>A Bit of Salt, a Trace of Life: Gender Norms and the Impact of a Salt Iodization Program on Human Capital Formation</title>
+				<link></link>
+				<pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+				<guid></guid>
+				<description>Evaluates how salt iodization influenced human capital formation through gendered channels.</description>
+			</item>
+			<item>
+				<title>Revealed Preference or Forced to Leave: Internal Migration Responses to Pollution Information in China</title>
+				<link></link>
+				<pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+				<guid></guid>
+				<description>Studies how pollution information affects internal migration decisions within China.</description>
+			</item>
+			<item>
+				<title>Early-Life Famine Exposure, Hunger Recall and Later-Life Health</title>
+				<link></link>
+				<pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
+				<guid></guid>
+				<description>Links famine exposure and hunger recall to later-life health outcomes.</description>
+			</item>
+	</channel>
 </rss>

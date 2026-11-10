@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Teaching on Zichen Deng | Assistant Professor of Economics</title>
+		<link>https://dengzc.github.io/teaching/</link>
+		<description>Recent content in Teaching on Zichen Deng | Assistant Professor of Economics</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 06 Jun 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://dengzc.github.io/teaching/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Environmental Econometrics (MSc)</title>
+				<link>https://dengzc.github.io/teaching/environmental-econometrics/</link>
+				<pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://dengzc.github.io/teaching/environmental-econometrics/</guid>
+				<description>MSc Econometrics course on identification strategies, empirical environmental research, and policy evaluation.</description>
+			</item>
+			<item>
+				<title>Natural Resource Economics (MSc)</title>
+				<link>https://dengzc.github.io/teaching/natural-resource-economics-msc/</link>
+				<pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://dengzc.github.io/teaching/natural-resource-economics-msc/</guid>
+				<description>MSc Economics course on economic theory and empirical methods for natural-resource management.</description>
+			</item>
+			<item>
+				<title>Natural Resource Economics (BSc)</title>
+				<link>https://dengzc.github.io/teaching/natural-resource-economics-bsc/</link>
+				<pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://dengzc.github.io/teaching/natural-resource-economics-bsc/</guid>
+				<description>Advanced BSc Economics course on sustainability, resource management, biodiversity, land use, and natural-resource policy.</description>
+			</item>
+	</channel>
+</rss>

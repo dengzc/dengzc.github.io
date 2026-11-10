@@ -1,0 +1,861 @@
+{
+ "meta": {
+  "classification": "SBI 2008 (2-digit division)",
+  "outcome_label_en": "Take-up of AGV",
+  "outcome_label_nl": "Gebruik van AGV",
+  "weighted_mean": 0.5941,
+  "n_industries": 85,
+  "n_suppressed": 1,
+  "min_obs_rule": "Industries with fewer than 10 observations are suppressed."
+ },
+ "industries": [
+  {
+   "code": "97",
+   "name_en": "97 Households as employers of domestic personnel",
+   "name_nl": "97 Huishoudens als werkgever van huishoudelijk personeel",
+   "suppressed": true,
+   "takeup": null,
+   "n": null
+  },
+  {
+   "code": "36",
+   "name_en": "36 Collection and distribution of water",
+   "name_nl": "36 Winning en distributie van water",
+   "suppressed": false,
+   "takeup": 0.8427,
+   "n": 375,
+   "ci_lo": 0.8024,
+   "ci_hi": 0.876
+  },
+  {
+   "code": "65",
+   "name_en": "65 Insurance and pension funds (excluding compulsory social security)",
+   "name_nl": "65 Verzekeringen en pensioenfondsen (geen verplichte sociale verzekeringen)",
+   "suppressed": false,
+   "takeup": 0.775,
+   "n": 2227,
+   "ci_lo": 0.7572,
+   "ci_hi": 0.7919
+  },
+  {
+   "code": "21",
+   "name_en": "21 Manufacture of pharmaceutical raw materials and products",
+   "name_nl": "21 Vervaardiging van farmaceutische grondstoffen en producten",
+   "suppressed": false,
+   "takeup": 0.742,
+   "n": 876,
+   "ci_lo": 0.712,
+   "ci_hi": 0.7699
+  },
+  {
+   "code": "71",
+   "name_en": "71 Architects, engineers and technical design and consultancy; testing and inspection",
+   "name_nl": "71 Architecten, ingenieurs en technisch ontwerp en advies; keuring en controle",
+   "suppressed": false,
+   "takeup": 0.7256,
+   "n": 9454,
+   "ci_lo": 0.7165,
+   "ci_hi": 0.7345
+  },
+  {
+   "code": "60",
+   "name_en": "60 Producing and broadcasting radio and television programmes",
+   "name_nl": "60 Verzorgen en uitzenden van radio- en televisieprogramma's",
+   "suppressed": false,
+   "takeup": 0.7146,
+   "n": 452,
+   "ci_lo": 0.6713,
+   "ci_hi": 0.7543
+  },
+  {
+   "code": "06",
+   "name_en": "06 Extraction of crude petroleum and natural gas",
+   "name_nl": "06 Winning van aardolie en aardgas",
+   "suppressed": false,
+   "takeup": 0.7143,
+   "n": 175,
+   "ci_lo": 0.6433,
+   "ci_hi": 0.7761
+  },
+  {
+   "code": "13",
+   "name_en": "13 Manufacture of textiles",
+   "name_nl": "13 Vervaardiging van textiel",
+   "suppressed": false,
+   "takeup": 0.7081,
+   "n": 579,
+   "ci_lo": 0.6698,
+   "ci_hi": 0.7437
+  },
+  {
+   "code": "79",
+   "name_en": "79 Travel agencies, tour operators, tourist information and reservation services",
+   "name_nl": "79 Reisbemiddeling, reisorganisatie, toeristische informatie en reserveringsbureaus",
+   "suppressed": false,
+   "takeup": 0.7063,
+   "n": 909,
+   "ci_lo": 0.6758,
+   "ci_hi": 0.735
+  },
+  {
+   "code": "72",
+   "name_en": "72 Research and development",
+   "name_nl": "72 Speur- en ontwikkelingswerk",
+   "suppressed": false,
+   "takeup": 0.7045,
+   "n": 2690,
+   "ci_lo": 0.6869,
+   "ci_hi": 0.7214
+  },
+  {
+   "code": "28",
+   "name_en": "28 Manufacture of other machinery and equipment",
+   "name_nl": "28 Vervaardiging van overige machines en apparaten",
+   "suppressed": false,
+   "takeup": 0.6987,
+   "n": 7975,
+   "ci_lo": 0.6885,
+   "ci_hi": 0.7087
+  },
+  {
+   "code": "27",
+   "name_en": "27 Manufacture of electrical equipment",
+   "name_nl": "27 Vervaardiging van elektrische apparatuur",
+   "suppressed": false,
+   "takeup": 0.6966,
+   "n": 1724,
+   "ci_lo": 0.6745,
+   "ci_hi": 0.7179
+  },
+  {
+   "code": "11",
+   "name_en": "11 Manufacture of beverages",
+   "name_nl": "11 Vervaardiging van dranken",
+   "suppressed": false,
+   "takeup": 0.6941,
+   "n": 657,
+   "ci_lo": 0.6578,
+   "ci_hi": 0.7281
+  },
+  {
+   "code": "35",
+   "name_en": "35 Production, distribution and trade of electricity, natural gas, steam and refrigerated air",
+   "name_nl": "35 Productie en distributie van en handel in elektriciteit, aardgas, stoom en gekoelde lucht",
+   "suppressed": false,
+   "takeup": 0.687,
+   "n": 2553,
+   "ci_lo": 0.6688,
+   "ci_hi": 0.7047
+  },
+  {
+   "code": "24",
+   "name_en": "24 Manufacture of basic metals",
+   "name_nl": "24 Vervaardiging van metalen in primaire vorm",
+   "suppressed": false,
+   "takeup": 0.6864,
+   "n": 1524,
+   "ci_lo": 0.6626,
+   "ci_hi": 0.7092
+  },
+  {
+   "code": "20",
+   "name_en": "20 Manufacture of chemical products",
+   "name_nl": "20 Vervaardiging van chemische producten",
+   "suppressed": false,
+   "takeup": 0.6841,
+   "n": 2795,
+   "ci_lo": 0.6666,
+   "ci_hi": 0.7011
+  },
+  {
+   "code": "29",
+   "name_en": "29 Manufacture of motor vehicles, trailers and semi-trailers",
+   "name_nl": "29 Vervaardiging van auto's, aanhangwagens en opleggers",
+   "suppressed": false,
+   "takeup": 0.6824,
+   "n": 1719,
+   "ci_lo": 0.66,
+   "ci_hi": 0.704
+  },
+  {
+   "code": "26",
+   "name_en": "26 Manufacture of computers and electronic and optical products",
+   "name_nl": "26 Vervaardiging van computers en van elektronische en optische apparatuur",
+   "suppressed": false,
+   "takeup": 0.6794,
+   "n": 1653,
+   "ci_lo": 0.6565,
+   "ci_hi": 0.7014
+  },
+  {
+   "code": "69",
+   "name_en": "69 Legal services, accountancy, tax advice and administration",
+   "name_nl": "69 Rechtskundige dienstverlening, accountancy, belastingadvisering en administratie",
+   "suppressed": false,
+   "takeup": 0.6776,
+   "n": 6617,
+   "ci_lo": 0.6663,
+   "ci_hi": 0.6888
+  },
+  {
+   "code": "61",
+   "name_en": "61 Telecommunications",
+   "name_nl": "61 Telecommunicatie",
+   "suppressed": false,
+   "takeup": 0.6733,
+   "n": 2112,
+   "ci_lo": 0.653,
+   "ci_hi": 0.693
+  },
+  {
+   "code": "17",
+   "name_en": "17 Manufacture of paper, board and paper and board products",
+   "name_nl": "17 Vervaardiging van papier, karton en papier- en kartonwaren",
+   "suppressed": false,
+   "takeup": 0.6693,
+   "n": 998,
+   "ci_lo": 0.6396,
+   "ci_hi": 0.6978
+  },
+  {
+   "code": "86",
+   "name_en": "86 Human health activities",
+   "name_nl": "86 Gezondheidszorg",
+   "suppressed": false,
+   "takeup": 0.6651,
+   "n": 13443,
+   "ci_lo": 0.6571,
+   "ci_hi": 0.673
+  },
+  {
+   "code": "38",
+   "name_en": "38 Waste collection and treatment; preparation for recycling",
+   "name_nl": "38 Afvalinzameling en -behandeling; voorbereiding tot recycling",
+   "suppressed": false,
+   "takeup": 0.6643,
+   "n": 1707,
+   "ci_lo": 0.6416,
+   "ci_hi": 0.6863
+  },
+  {
+   "code": "30",
+   "name_en": "30 Manufacture of other transport equipment",
+   "name_nl": "30 Vervaardiging van overige transportmiddelen",
+   "suppressed": false,
+   "takeup": 0.66,
+   "n": 1359,
+   "ci_lo": 0.6344,
+   "ci_hi": 0.6847
+  },
+  {
+   "code": "91",
+   "name_en": "91 Cultural lending centres, public archives, museums, zoos and botanical gardens, nature conservation",
+   "name_nl": "91 Culturele uitleencentra, openbare archieven, musea, dieren- en plantentuinen, natuurbehoud",
+   "suppressed": false,
+   "takeup": 0.6573,
+   "n": 531,
+   "ci_lo": 0.6159,
+   "ci_hi": 0.6964
+  },
+  {
+   "code": "42",
+   "name_en": "42 Civil engineering of land, water and roads (excluding earthmoving)",
+   "name_nl": "42 Grond-, water- en wegenbouw (geen grondverzet)",
+   "suppressed": false,
+   "takeup": 0.6562,
+   "n": 4308,
+   "ci_lo": 0.6419,
+   "ci_hi": 0.6703
+  },
+  {
+   "code": "12",
+   "name_en": "12 Manufacture of tobacco products",
+   "name_nl": "12 Vervaardiging van tabaksproducten",
+   "suppressed": false,
+   "takeup": 0.6552,
+   "n": 29,
+   "ci_lo": 0.4734,
+   "ci_hi": 0.8006
+  },
+  {
+   "code": "58",
+   "name_en": "58 Publishing",
+   "name_nl": "58 Uitgeverijen",
+   "suppressed": false,
+   "takeup": 0.6535,
+   "n": 1111,
+   "ci_lo": 0.625,
+   "ci_hi": 0.6809
+  },
+  {
+   "code": "62",
+   "name_en": "62 Information technology service activities",
+   "name_nl": "62 Dienstverlenende activiteiten op het gebied van informatietechnologie",
+   "suppressed": false,
+   "takeup": 0.6532,
+   "n": 18722,
+   "ci_lo": 0.6464,
+   "ci_hi": 0.66
+  },
+  {
+   "code": "41",
+   "name_en": "41 General residential and non-residential construction and project development",
+   "name_nl": "41 Algemene burgerlijke en utiliteitsbouw en projectontwikkeling",
+   "suppressed": false,
+   "takeup": 0.6462,
+   "n": 8638,
+   "ci_lo": 0.6361,
+   "ci_hi": 0.6562
+  },
+  {
+   "code": "10",
+   "name_en": "10 Manufacture of food products",
+   "name_nl": "10 Vervaardiging van voedingsmiddelen",
+   "suppressed": false,
+   "takeup": 0.6452,
+   "n": 6981,
+   "ci_lo": 0.6339,
+   "ci_hi": 0.6563
+  },
+  {
+   "code": "22",
+   "name_en": "22 Manufacture of rubber and plastic products",
+   "name_nl": "22 Vervaardiging van producten van rubber en kunststof",
+   "suppressed": false,
+   "takeup": 0.6447,
+   "n": 1956,
+   "ci_lo": 0.6232,
+   "ci_hi": 0.6656
+  },
+  {
+   "code": "18",
+   "name_en": "18 Printing and reproduction of recorded media",
+   "name_nl": "18 Drukkerijen, reproductie van opgenomen media",
+   "suppressed": false,
+   "takeup": 0.6357,
+   "n": 571,
+   "ci_lo": 0.5955,
+   "ci_hi": 0.6742
+  },
+  {
+   "code": "87",
+   "name_en": "87 Nursing, care and guidance with accommodation",
+   "name_nl": "87 Verpleging, verzorging en begeleiding met overnachting",
+   "suppressed": false,
+   "takeup": 0.6338,
+   "n": 7433,
+   "ci_lo": 0.6228,
+   "ci_hi": 0.6447
+  },
+  {
+   "code": "19",
+   "name_en": "19 Manufacture of coke oven products and petroleum refining",
+   "name_nl": "19 Vervaardiging van cokesovenproducten en aardolieverwerking",
+   "suppressed": false,
+   "takeup": 0.6304,
+   "n": 533,
+   "ci_lo": 0.5886,
+   "ci_hi": 0.6703
+  },
+  {
+   "code": "92",
+   "name_en": "92 Lotteries and gambling",
+   "name_nl": "92 Loterijen en kansspelen",
+   "suppressed": false,
+   "takeup": 0.6295,
+   "n": 305,
+   "ci_lo": 0.574,
+   "ci_hi": 0.6818
+  },
+  {
+   "code": "73",
+   "name_en": "73 Advertising and market research",
+   "name_nl": "73 Reclame en marktonderzoek",
+   "suppressed": false,
+   "takeup": 0.6261,
+   "n": 2763,
+   "ci_lo": 0.6079,
+   "ci_hi": 0.644
+  },
+  {
+   "code": "66",
+   "name_en": "66 Other financial services",
+   "name_nl": "66 Overige financiële dienstverlening",
+   "suppressed": false,
+   "takeup": 0.626,
+   "n": 3497,
+   "ci_lo": 0.6098,
+   "ci_hi": 0.6419
+  },
+  {
+   "code": "33",
+   "name_en": "33 Repair and installation of machinery and equipment",
+   "name_nl": "33 Reparatie en installatie van machines en apparaten",
+   "suppressed": false,
+   "takeup": 0.6228,
+   "n": 3065,
+   "ci_lo": 0.6055,
+   "ci_hi": 0.6398
+  },
+  {
+   "code": "25",
+   "name_en": "25 Manufacture of fabricated metal products (excluding machinery and equipment)",
+   "name_nl": "25 Vervaardiging van producten van metaal (geen machines en apparaten)",
+   "suppressed": false,
+   "takeup": 0.6212,
+   "n": 5869,
+   "ci_lo": 0.6087,
+   "ci_hi": 0.6336
+  },
+  {
+   "code": "52",
+   "name_en": "52 Warehousing and support activities for transport",
+   "name_nl": "52 Opslag en dienstverlening voor vervoer",
+   "suppressed": false,
+   "takeup": 0.6157,
+   "n": 7422,
+   "ci_lo": 0.6046,
+   "ci_hi": 0.6267
+  },
+  {
+   "code": "75",
+   "name_en": "75 Veterinary services",
+   "name_nl": "75 Veterinaire dienstverlening",
+   "suppressed": false,
+   "takeup": 0.6138,
+   "n": 189,
+   "ci_lo": 0.5427,
+   "ci_hi": 0.6802
+  },
+  {
+   "code": "85",
+   "name_en": "85 Education",
+   "name_nl": "85 Onderwijs",
+   "suppressed": false,
+   "takeup": 0.6117,
+   "n": 17054,
+   "ci_lo": 0.6044,
+   "ci_hi": 0.619
+  },
+  {
+   "code": "94",
+   "name_en": "94 Religious and political organisations, interest and idealistic organisations, hobby clubs",
+   "name_nl": "94 Levensbeschouwelijke en politieke organisaties, belangen- en ideële organisaties, hobbyclubs",
+   "suppressed": false,
+   "takeup": 0.6103,
+   "n": 2181,
+   "ci_lo": 0.5896,
+   "ci_hi": 0.6305
+  },
+  {
+   "code": "59",
+   "name_en": "59 Production and distribution of films and television programmes; sound recording and music publishing",
+   "name_nl": "59 Productie en distributie van films en televisieprogramma's; maken en uitgeven van geluidsopnamen",
+   "suppressed": false,
+   "takeup": 0.6034,
+   "n": 764,
+   "ci_lo": 0.5683,
+   "ci_hi": 0.6375
+  },
+  {
+   "code": "84",
+   "name_en": "84 Public administration, government services and compulsory social security",
+   "name_nl": "84 Openbaar bestuur, overheidsdiensten en verplichte sociale verzekeringen",
+   "suppressed": false,
+   "takeup": 0.598,
+   "n": 27405,
+   "ci_lo": 0.5922,
+   "ci_hi": 0.6038
+  },
+  {
+   "code": "23",
+   "name_en": "23 Manufacture of other non-metallic mineral products",
+   "name_nl": "23 Vervaardiging van overige niet-metaalhoudende minerale producten",
+   "suppressed": false,
+   "takeup": 0.595,
+   "n": 1274,
+   "ci_lo": 0.5678,
+   "ci_hi": 0.6216
+  },
+  {
+   "code": "43",
+   "name_en": "43 Specialised construction activities",
+   "name_nl": "43 Gespecialiseerde werkzaamheden in de bouw",
+   "suppressed": false,
+   "takeup": 0.5943,
+   "n": 16736,
+   "ci_lo": 0.5868,
+   "ci_hi": 0.6017
+  },
+  {
+   "code": "08",
+   "name_en": "08 Mining and quarrying (excluding oil and gas)",
+   "name_nl": "08 Winning van delfstoffen (geen olie en gas)",
+   "suppressed": false,
+   "takeup": 0.5864,
+   "n": 162,
+   "ci_lo": 0.5094,
+   "ci_hi": 0.6594
+  },
+  {
+   "code": "51",
+   "name_en": "51 Air transport",
+   "name_nl": "51 Luchtvaart",
+   "suppressed": false,
+   "takeup": 0.5851,
+   "n": 1099,
+   "ci_lo": 0.5557,
+   "ci_hi": 0.6139
+  },
+  {
+   "code": "15",
+   "name_en": "15 Manufacture of leather, leather goods and footwear",
+   "name_nl": "15 Vervaardiging van leer, lederwaren en schoenen",
+   "suppressed": false,
+   "takeup": 0.5823,
+   "n": 79,
+   "ci_lo": 0.4722,
+   "ci_hi": 0.6847
+  },
+  {
+   "code": "09",
+   "name_en": "09 Support service activities for mining",
+   "name_nl": "09 Dienstverlening voor de winning van delfstoffen",
+   "suppressed": false,
+   "takeup": 0.5779,
+   "n": 289,
+   "ci_lo": 0.5203,
+   "ci_hi": 0.6334
+  },
+  {
+   "code": "31",
+   "name_en": "31 Manufacture of furniture",
+   "name_nl": "31 Vervaardiging van meubels",
+   "suppressed": false,
+   "takeup": 0.5768,
+   "n": 1406,
+   "ci_lo": 0.5508,
+   "ci_hi": 0.6024
+  },
+  {
+   "code": "46",
+   "name_en": "46 Wholesale trade and commission trade (excluding motor vehicles and motorcycles)",
+   "name_nl": "46 Groothandel en handelsbemiddeling (niet in auto's en motorfietsen)",
+   "suppressed": false,
+   "takeup": 0.5761,
+   "n": 31227,
+   "ci_lo": 0.5706,
+   "ci_hi": 0.5816
+  },
+  {
+   "code": "49",
+   "name_en": "49 Land transport",
+   "name_nl": "49 Vervoer over land",
+   "suppressed": false,
+   "takeup": 0.5758,
+   "n": 10169,
+   "ci_lo": 0.5661,
+   "ci_hi": 0.5853
+  },
+  {
+   "code": "88",
+   "name_en": "88 Social work activities without accommodation",
+   "name_nl": "88 Maatschappelijke dienstverlening zonder overnachting",
+   "suppressed": false,
+   "takeup": 0.5733,
+   "n": 3035,
+   "ci_lo": 0.5556,
+   "ci_hi": 0.5908
+  },
+  {
+   "code": "77",
+   "name_en": "77 Renting and leasing of motor vehicles, consumer goods, machinery and other movable property",
+   "name_nl": "77 Verhuur en lease van auto's, consumentenartikelen, machines en overige roerende goederen",
+   "suppressed": false,
+   "takeup": 0.5704,
+   "n": 2537,
+   "ci_lo": 0.551,
+   "ci_hi": 0.5895
+  },
+  {
+   "code": "16",
+   "name_en": "16 Primary wood processing and manufacture of articles of wood, cork, straw and plaiting materials (excluding furniture)",
+   "name_nl": "16 Primaire houtbewerking en vervaardiging van artikelen van hout, kurk, riet en vlechtwerk (geen meubels)",
+   "suppressed": false,
+   "takeup": 0.5635,
+   "n": 1063,
+   "ci_lo": 0.5335,
+   "ci_hi": 0.593
+  },
+  {
+   "code": "82",
+   "name_en": "82 Other business support services",
+   "name_nl": "82 Overige zakelijke dienstverlening",
+   "suppressed": false,
+   "takeup": 0.5606,
+   "n": 1732,
+   "ci_lo": 0.5371,
+   "ci_hi": 0.5838
+  },
+  {
+   "code": "78",
+   "name_en": "78 Employment placement, temporary employment agencies and personnel management",
+   "name_nl": "78 Arbeidsbemiddeling, uitzendbureaus en personeelsbeheer",
+   "suppressed": false,
+   "takeup": 0.5534,
+   "n": 20189,
+   "ci_lo": 0.5466,
+   "ci_hi": 0.5603
+  },
+  {
+   "code": "45",
+   "name_en": "45 Trade and repair of motor vehicles, motorcycles and trailers",
+   "name_nl": "45 Handel in en reparatie van auto's, motorfietsen en aanhangers",
+   "suppressed": false,
+   "takeup": 0.5511,
+   "n": 8831,
+   "ci_lo": 0.5407,
+   "ci_hi": 0.5615
+  },
+  {
+   "code": "02",
+   "name_en": "02 Forestry, logging and related service activities",
+   "name_nl": "02 Bosbouw, exploitatie van bossen en dienstverlening voor de bosbouw",
+   "suppressed": false,
+   "takeup": 0.5507,
+   "n": 69,
+   "ci_lo": 0.4338,
+   "ci_hi": 0.6623
+  },
+  {
+   "code": "63",
+   "name_en": "63 Information service activities",
+   "name_nl": "63 Dienstverlenende activiteiten op het gebied van informatie",
+   "suppressed": false,
+   "takeup": 0.5477,
+   "n": 1665,
+   "ci_lo": 0.5238,
+   "ci_hi": 0.5715
+  },
+  {
+   "code": "74",
+   "name_en": "74 Industrial and graphic design, photography, translation and other consultancy",
+   "name_nl": "74 Industrieel ontwerp en vormgeving, fotografie, vertaling en overige consultancy",
+   "suppressed": false,
+   "takeup": 0.5469,
+   "n": 1536,
+   "ci_lo": 0.5219,
+   "ci_hi": 0.5716
+  },
+  {
+   "code": "70",
+   "name_en": "70 Holdings (non-financial), intra-group services and management consultancy",
+   "name_nl": "70 Holdings (geen financiële), concerndiensten binnen eigen concern en managementadvisering",
+   "suppressed": false,
+   "takeup": 0.5397,
+   "n": 9807,
+   "ci_lo": 0.5298,
+   "ci_hi": 0.5496
+  },
+  {
+   "code": "68",
+   "name_en": "68 Renting and trade of real estate",
+   "name_nl": "68 Verhuur van en handel in onroerend goed",
+   "suppressed": false,
+   "takeup": 0.538,
+   "n": 3128,
+   "ci_lo": 0.5205,
+   "ci_hi": 0.5555
+  },
+  {
+   "code": "80",
+   "name_en": "80 Security and investigation",
+   "name_nl": "80 Beveiliging en opsporing",
+   "suppressed": false,
+   "takeup": 0.5368,
+   "n": 1740,
+   "ci_lo": 0.5133,
+   "ci_hi": 0.5601
+  },
+  {
+   "code": "39",
+   "name_en": "39 Remediation and other waste management",
+   "name_nl": "39 Sanering en overig afvalbeheer",
+   "suppressed": false,
+   "takeup": 0.5208,
+   "n": 144,
+   "ci_lo": 0.4398,
+   "ci_hi": 0.6008
+  },
+  {
+   "code": "03",
+   "name_en": "03 Fishing and aquaculture of fish and shellfish",
+   "name_nl": "03 Visserij en kweken van vis en schaaldieren",
+   "suppressed": false,
+   "takeup": 0.52,
+   "n": 125,
+   "ci_lo": 0.4331,
+   "ci_hi": 0.6057
+  },
+  {
+   "code": "55",
+   "name_en": "55 Accommodation",
+   "name_nl": "55 Logiesverstrekking",
+   "suppressed": false,
+   "takeup": 0.5164,
+   "n": 1921,
+   "ci_lo": 0.494,
+   "ci_hi": 0.5387
+  },
+  {
+   "code": "47",
+   "name_en": "47 Retail trade (excluding motor vehicles)",
+   "name_nl": "47 Detailhandel (niet in auto's)",
+   "suppressed": false,
+   "takeup": 0.5148,
+   "n": 15658,
+   "ci_lo": 0.5069,
+   "ci_hi": 0.5226
+  },
+  {
+   "code": "90",
+   "name_en": "90 Arts",
+   "name_nl": "90 Kunst",
+   "suppressed": false,
+   "takeup": 0.5124,
+   "n": 929,
+   "ci_lo": 0.4803,
+   "ci_hi": 0.5444
+  },
+  {
+   "code": "50",
+   "name_en": "50 Water transport",
+   "name_nl": "50 Vervoer over water",
+   "suppressed": false,
+   "takeup": 0.4936,
+   "n": 934,
+   "ci_lo": 0.4616,
+   "ci_hi": 0.5256
+  },
+  {
+   "code": "53",
+   "name_en": "53 Postal and courier activities",
+   "name_nl": "53 Post en koeriers",
+   "suppressed": false,
+   "takeup": 0.4898,
+   "n": 2407,
+   "ci_lo": 0.4699,
+   "ci_hi": 0.5098
+  },
+  {
+   "code": "37",
+   "name_en": "37 Sewerage collection and treatment",
+   "name_nl": "37 Afvalwaterinzameling en -behandeling",
+   "suppressed": false,
+   "takeup": 0.4783,
+   "n": 299,
+   "ci_lo": 0.4223,
+   "ci_hi": 0.5348
+  },
+  {
+   "code": "64",
+   "name_en": "64 Financial institutions (excluding insurance and pension funds)",
+   "name_nl": "64 Financiële instellingen (geen verzekeringen en pensioenfondsen)",
+   "suppressed": false,
+   "takeup": 0.4714,
+   "n": 10920,
+   "ci_lo": 0.4621,
+   "ci_hi": 0.4808
+  },
+  {
+   "code": "81",
+   "name_en": "81 Facility management, cleaning and landscaping",
+   "name_nl": "81 Facility management, reiniging en landschapsverzorging",
+   "suppressed": false,
+   "takeup": 0.4534,
+   "n": 5552,
+   "ci_lo": 0.4403,
+   "ci_hi": 0.4665
+  },
+  {
+   "code": "95",
+   "name_en": "95 Repair of computers and consumer goods",
+   "name_nl": "95 Reparatie van computers en consumentenartikelen",
+   "suppressed": false,
+   "takeup": 0.4518,
+   "n": 332,
+   "ci_lo": 0.3991,
+   "ci_hi": 0.5056
+  },
+  {
+   "code": "93",
+   "name_en": "93 Sports and recreation",
+   "name_nl": "93 Sport en recreatie",
+   "suppressed": false,
+   "takeup": 0.4493,
+   "n": 2355,
+   "ci_lo": 0.4293,
+   "ci_hi": 0.4694
+  },
+  {
+   "code": "32",
+   "name_en": "32 Manufacture of other goods",
+   "name_nl": "32 Vervaardiging van overige goederen",
+   "suppressed": false,
+   "takeup": 0.4431,
+   "n": 1731,
+   "ci_lo": 0.4198,
+   "ci_hi": 0.4666
+  },
+  {
+   "code": "01",
+   "name_en": "01 Agriculture, hunting and related service activities",
+   "name_nl": "01 Landbouw, jacht en dienstverlening voor de landbouw en jacht",
+   "suppressed": false,
+   "takeup": 0.432,
+   "n": 4289,
+   "ci_lo": 0.4173,
+   "ci_hi": 0.4469
+  },
+  {
+   "code": "14",
+   "name_en": "14 Manufacture of wearing apparel",
+   "name_nl": "14 Vervaardiging van kleding",
+   "suppressed": false,
+   "takeup": 0.4314,
+   "n": 51,
+   "ci_lo": 0.305,
+   "ci_hi": 0.5673
+  },
+  {
+   "code": "96",
+   "name_en": "96 Wellness and other personal services; funeral industry",
+   "name_nl": "96 Wellness en overige dienstverlening; uitvaartbranche",
+   "suppressed": false,
+   "takeup": 0.3963,
+   "n": 931,
+   "ci_lo": 0.3654,
+   "ci_hi": 0.4281
+  },
+  {
+   "code": "56",
+   "name_en": "56 Food and beverage service establishments",
+   "name_nl": "56 Eet- en drinkgelegenheden",
+   "suppressed": false,
+   "takeup": 0.3735,
+   "n": 6608,
+   "ci_lo": 0.3619,
+   "ci_hi": 0.3852
+  },
+  {
+   "code": "99",
+   "name_en": "99 Extraterritorial organisations and bodies",
+   "name_nl": "99 Extraterritoriale organisaties en lichamen",
+   "suppressed": false,
+   "takeup": 0.25,
+   "n": 36,
+   "ci_lo": 0.1375,
+   "ci_hi": 0.4107
+  }
+ ]
+}

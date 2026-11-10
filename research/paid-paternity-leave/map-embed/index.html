@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Ubuntu+Mono&display=swap">
+    <link rel="stylesheet" type="text/css" href="/css/paper-pages.10dda31aea569743ede4886f753bd05176b30f5adba7ba79972b6f861a0e905e.css">
+    <style>
+        :root {
+            --fig-max-width: 56rem;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #fffdf9;
+            color: #071013;
+            font-family: Inter, Arial, sans-serif;
+        }
+
+        .map-embed-shell {
+            width: 100%;
+            max-width: 56rem;
+            margin: 0 auto;
+            padding: .5rem;
+        }
+
+        .municipality-map-figure {
+            max-width: none;
+            margin: 0;
+        }
+
+        .municipality-map-caption {
+            padding: .45rem .15rem 0;
+        }
+
+        @media (max-width: 760px) {
+            .map-embed-shell {
+                padding: .35rem;
+            }
+        }
+    </style>
+    <title>Interactive municipality map</title>
+</head>
+<body>
+    <main class="map-embed-shell">
+        
+        <figure class="municipality-map-figure" id="takeup-map-embed">
+            <div class="municipality-map" data-municipality-map data-topojson="/research/paid-paternity-leave/municipality-takeup.efa75d8ae7e54a88062cf1b8b034aa0a8579dca8aaa3ff2703f1df2d1b1b58ee.topojson" data-language="en">
+                <div class="municipality-map-toolbar">
+                    <h3 data-i18n="title">Explore municipalities</h3>
+                    <div class="municipality-map-actions" aria-label="Interactive map controls">
+                        <button type="button" class="municipality-map-lang" data-map-lang="en" aria-pressed="true">EN</button>
+                        <button type="button" class="municipality-map-lang" data-map-lang="nl" aria-pressed="false">NL</button>
+                        <button type="button" class="municipality-map-reset" data-map-reset data-i18n="reset">Reset</button>
+                    </div>
+                </div>
+
+                <div class="municipality-map-layout">
+                    <div class="municipality-map-canvas" aria-live="off">
+                        <svg data-map-svg></svg>
+                    </div>
+
+                    <aside class="municipality-map-details" aria-live="polite">
+                        <div class="municipality-map-details-kicker" data-map-panel-subtitle>No municipality selected</div>
+                        <div class="municipality-map-details-title" data-map-panel-title>Choose a municipality on the map.</div>
+                        <div class="municipality-map-fields" data-map-fields></div>
+
+                        <div class="municipality-map-legend" aria-hidden="true">
+                            <div class="municipality-map-legend-title" data-i18n="legend">Take-up of AGV</div>
+                            <div class="municipality-map-legend-swatches" data-map-legend-swatches></div>
+                            <div class="municipality-map-legend-labels" data-map-legend-labels></div>
+                        </div>
+                    </aside>
+                </div>
+
+                <div class="municipality-map-error-message" data-map-error></div>
+            </div>
+
+            <figcaption class="municipality-map-caption">
+                <div class="paper-figure-caption" data-i18n="figureCaption">Figure 4. Take-up of additional birth leave by municipality.</div>
+                <div class="paper-figure-takeaway" data-i18n="figureTakeaway">Click a municipality to view its take-up rate with a 95% confidence interval and public municipal descriptors; read the map as descriptive orientation rather than causal evidence.</div>
+            </figcaption>
+        </figure>
+
+        <script>
+            (function () {
+                var params = new URLSearchParams(window.location.search);
+                var lang = params.get("lang") === "nl" ? "nl" : "en";
+                document.documentElement.lang = lang;
+                document.querySelector("[data-municipality-map]").dataset.language = lang;
+            })();
+        </script>
+        <script src="/research/paid-paternity-leave/municipality-takeup-map.29de1b5d418fc8f6273ddfff23822a90fe600107017bde9145062f945c7456e0.js" defer></script>
+        
+    </main>
+</body>
+</html>

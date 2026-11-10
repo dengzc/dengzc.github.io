@@ -1,0 +1,737 @@
+:root {
+    /* Shared figure tokens so the static and interactive figures match. */
+    --fig-frame-border: 1px solid rgba(7, 16, 19, 0.12);
+    --fig-frame-radius: 0.2rem;
+    --fig-accent: #8C1515;
+    --fig-accent-border: rgba(140, 21, 21, 0.35);
+    --fig-max-width: 36rem;
+}
+
+.paper-page {
+    margin-top: 1%;
+}
+
+.paper-page-meta,
+.paper-page-summary,
+.paper-page .section-3,
+.paper-page-content figcaption,
+.paper-figure-caption-block {
+    font-family: 'Ubuntu Mono', serif;
+}
+
+.paper-page-meta,
+.paper-page-summary,
+.paper-page .section-3 {
+    margin-top: .4rem;
+}
+
+.paper-page-summary {
+    max-width: 46rem;
+}
+
+.paper-page .section-3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1rem 0.35rem;
+    align-items: flex-start;
+}
+
+.paper-page .section-3 a {
+    padding: .15%;
+}
+
+.paper-page .section-3 a:hover {
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    border-radius: 50%;
+    background-color: #d64933;
+    color: white;
+}
+
+.paper-page-content {
+    margin-top: 1%;
+}
+
+.paper-page-content h2 {
+    margin-top: 1.25rem;
+    margin-bottom: .4rem;
+}
+
+.paper-page-content p,
+.paper-page-content ul {
+    max-width: 46rem;
+}
+
+.paper-figure {
+    margin: 1rem 0 1.25rem;
+    max-width: 52rem;
+}
+
+.paper-figure-article {
+    max-width: var(--fig-max-width);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.paper-figure-language {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.paper-figure-language-controls {
+    display: flex;
+    gap: .25rem;
+    margin-bottom: .45rem;
+    font-family: 'Ubuntu Mono', serif;
+}
+
+.paper-figure-language-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.15rem;
+    min-height: 1.65rem;
+    padding: .1rem .35rem;
+    border: 1px solid var(--fig-accent-border);
+    border-radius: var(--fig-frame-radius);
+    color: var(--fig-accent);
+    cursor: pointer;
+    line-height: 1;
+}
+
+.paper-figure-language-label:hover {
+    border-color: #8C1515;
+}
+
+.paper-figure-language-input-en:checked ~ .paper-figure-language-controls .paper-figure-lang-en,
+.paper-figure-language-input-nl:checked ~ .paper-figure-language-controls .paper-figure-lang-nl {
+    background: #8C1515;
+    border-color: #8C1515;
+    color: #fffdf9;
+}
+
+.paper-figure-language-input-en:focus-visible ~ .paper-figure-language-controls .paper-figure-lang-en,
+.paper-figure-language-input-nl:focus-visible ~ .paper-figure-language-controls .paper-figure-lang-nl {
+    outline: 2px solid #d64933;
+    outline-offset: 2px;
+}
+
+/* Image panels: the EN and NL images are exported at identical dimensions,
+   so display-toggling them causes no layout shift. */
+.paper-figure-panel-nl {
+    display: none;
+}
+
+.paper-figure:has(.paper-figure-language-input-nl:checked) .paper-figure-panel-en {
+    display: none;
+}
+
+.paper-figure:has(.paper-figure-language-input-nl:checked) .paper-figure-panel-nl {
+    display: block;
+}
+
+/* Caption + takeaway: the two language versions differ in text length. Stack
+   them in the SAME grid cell so the block always reserves the height of the
+   taller language, then toggle visibility (which keeps layout) instead of
+   display (which would resize the block and shift every figure below it). */
+.paper-figure-caption-block {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.paper-figure-caption-content-en,
+.paper-figure-caption-content-nl {
+    grid-area: 1 / 1;
+}
+
+.paper-figure-caption-content-nl {
+    visibility: hidden;
+}
+
+.paper-figure:has(.paper-figure-language-input-nl:checked) .paper-figure-caption-content-en {
+    visibility: hidden;
+}
+
+.paper-figure:has(.paper-figure-language-input-nl:checked) .paper-figure-caption-content-nl {
+    visibility: visible;
+}
+
+.paper-figure img,
+.paper-figure svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: var(--fig-frame-border);
+    border-radius: var(--fig-frame-radius);
+    background: #faf8f3;
+}
+
+/* The municipality map is more square (528x384) than the wide article charts
+   (576x336). Cap its figure to the article width and narrow the image by the
+   aspect-ratio factor (1.375 / 1.714 = 0.802) so its rendered height matches
+   the charts at every column width. */
+.paper-figure-map {
+    max-width: 36rem;
+}
+
+.paper-figure-map img,
+.paper-figure-map svg {
+    width: 80.2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paper-figure-missing {
+    padding: 1rem;
+    border: 1px dashed rgba(7, 16, 19, 0.35);
+    border-radius: 0.2rem;
+    background: #faf8f3;
+    font-family: 'Ubuntu Mono', serif;
+}
+
+.paper-figure-caption {
+    margin-top: .45rem;
+    text-align: left !important;
+}
+
+.paper-figure-takeaway {
+    margin-top: .2rem;
+    color: #5b6468;
+    text-align: left !important;
+}
+
+.municipality-map-figure {
+    max-width: var(--fig-max-width);
+    margin: 1.25rem 0 1.5rem;
+}
+
+.municipality-map {
+    border: var(--fig-frame-border);
+    border-radius: var(--fig-frame-radius);
+    background: #fffdf9;
+}
+
+.municipality-map-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .75rem;
+    padding: .75rem .85rem;
+    border-bottom: 1px solid rgba(7, 16, 19, 0.1);
+}
+
+.municipality-map-toolbar h3 {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.municipality-map-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .35rem;
+    justify-content: flex-end;
+}
+
+.municipality-map button {
+    min-width: 2.15rem;
+    min-height: 1.65rem;
+    padding: .1rem .35rem;
+    border: 1px solid var(--fig-accent-border);
+    border-radius: var(--fig-frame-radius);
+    background: #fffdf9;
+    color: var(--fig-accent);
+    font-family: 'Ubuntu Mono', serif;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.municipality-map button:hover {
+    border-color: #8C1515;
+}
+
+.municipality-map button:focus-visible,
+.municipality-map-shape:focus-visible {
+    outline: 2px solid #d64933;
+    outline-offset: 2px;
+}
+
+.municipality-map-lang[aria-pressed="true"] {
+    border-color: #8C1515;
+    background: #8C1515;
+    color: #fffdf9;
+}
+
+/* The reset label is "Reset" in English but the longer "Herstel" in Dutch.
+   Because the action row is right-aligned, a width change here shifts the whole
+   EN/NL/Reset group sideways on language toggle. Reserve room for the wider
+   label so the button keeps a constant width in both languages. */
+.municipality-map button.municipality-map-reset {
+    /* Holds the wider Dutch "Herstel" with headroom for the serif fallback
+       font, so the button width (and thus the right-aligned row) never shifts. */
+    min-width: 5rem;
+}
+
+.municipality-map button.municipality-map-share {
+    min-width: 5.85rem;
+}
+
+.municipality-map-share-panel {
+    padding: .7rem .85rem;
+    border-bottom: 1px solid rgba(7, 16, 19, 0.1);
+    background: #faf8f3;
+}
+
+.municipality-map-share-label {
+    display: block;
+    margin-bottom: .35rem;
+    color: #5b6468;
+    font-size: .74rem;
+}
+
+.municipality-map-share-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: .45rem;
+    align-items: stretch;
+}
+
+.municipality-map-share-row textarea {
+    width: 100%;
+    min-height: 4.25rem;
+    padding: .45rem .5rem;
+    resize: vertical;
+    border: 1px solid rgba(7, 16, 19, 0.14);
+    border-radius: .25rem;
+    background: #fffdf9;
+    color: #071013;
+    font-family: 'Ubuntu Mono', serif;
+    font-size: .75rem;
+    line-height: 1.35;
+}
+
+.municipality-map-share-row .municipality-map-copy {
+    min-width: 5.5rem;
+    white-space: nowrap;
+}
+
+.municipality-map-share-status {
+    min-height: 1rem;
+    margin-top: .3rem;
+    color: #5b6468;
+    font-size: .72rem;
+}
+
+.municipality-map-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 22rem) minmax(10.75rem, 1fr);
+    gap: .65rem;
+    align-items: stretch;
+    padding: .7rem;
+}
+
+.municipality-map-canvas {
+    min-width: 0;
+    background: #f7f4ed;
+    border: 1px solid rgba(7, 16, 19, 0.08);
+    border-radius: .25rem;
+}
+
+.municipality-map-canvas svg {
+    display: block;
+    width: 100%;
+    height: 24rem;
+}
+
+.municipality-map-shape {
+    stroke: rgba(255, 255, 255, 0.84);
+    stroke-width: .9;
+    vector-effect: non-scaling-stroke;
+    cursor: pointer;
+    transition: fill .12s ease, stroke .12s ease, stroke-width .12s ease;
+}
+
+.municipality-map-shape:hover,
+.municipality-map-shape:focus,
+.municipality-map-shape.is-selected {
+    stroke: #8C1515;
+    stroke-width: 2.2;
+}
+
+.municipality-map-details {
+    min-width: 0;
+    max-height: 24rem;
+    overflow-y: auto;
+    padding: .5rem;
+    border: 1px solid rgba(7, 16, 19, 0.1);
+    border-radius: .25rem;
+    background: #faf8f3;
+}
+
+.municipality-map-details-kicker,
+.municipality-map-field-label,
+.municipality-map-legend,
+.municipality-map-caption,
+.municipality-map-share-label,
+.municipality-map-share-status {
+    font-family: 'Ubuntu Mono', serif;
+}
+
+.municipality-map-details-kicker {
+    color: #6a7377;
+    font-size: .74rem;
+}
+
+.municipality-map-details-title {
+    margin-top: .15rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: #071013;
+}
+
+.municipality-map-fields {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .25rem;
+    margin-top: .5rem;
+}
+
+.municipality-map-field {
+    display: grid;
+    gap: .05rem;
+    padding-bottom: .28rem;
+    border-bottom: 1px solid rgba(7, 16, 19, 0.08);
+}
+
+.municipality-map-field-label {
+    color: #6a7377;
+    font-size: .72rem;
+}
+
+.municipality-map-field-value {
+    color: #071013;
+    font-size: .86rem;
+}
+
+.municipality-map-legend {
+    margin-top: .5rem;
+}
+
+.municipality-map-legend-title {
+    margin-bottom: .2rem;
+    color: #5b6468;
+}
+
+.municipality-map-legend-swatches {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: .55rem;
+    overflow: hidden;
+    border-radius: .15rem;
+}
+
+/* Highlight the colour bin of the currently selected municipality. */
+.municipality-map-legend-swatches span.is-active {
+    position: relative;
+    z-index: 1;
+    box-shadow: inset 0 0 0 1px #fffdf9, inset 0 0 0 2.5px #20384a;
+}
+
+.municipality-map-legend-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .15rem;
+    color: #5b6468;
+    font-size: .72rem;
+}
+
+.municipality-map-error-message {
+    display: none;
+    padding: .75rem .85rem;
+    color: #8C1515;
+    font-family: 'Ubuntu Mono', serif;
+}
+
+.municipality-map-error .municipality-map-error-message {
+    display: block;
+}
+
+.municipality-map-noscript {
+    padding: .7rem;
+}
+
+.municipality-map-noscript img {
+    display: block;
+    width: 80.2%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid rgba(7, 16, 19, 0.12);
+    border-radius: .2rem;
+    background: #faf8f3;
+}
+
+.municipality-map-noscript .municipality-map-error-message {
+    display: block;
+    padding: .65rem 0 0;
+    color: #5b6468;
+}
+
+@media (max-width: 760px) {
+    .municipality-map-toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .municipality-map-actions {
+        justify-content: flex-start;
+    }
+
+    .municipality-map-share-row {
+        grid-template-columns: 1fr;
+    }
+
+    .municipality-map-share-row .municipality-map-copy {
+        justify-self: start;
+    }
+
+    .municipality-map-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .municipality-map-details {
+        max-height: none;
+        overflow-y: visible;
+    }
+
+    .municipality-map-canvas svg {
+        height: 22rem;
+    }
+
+    .municipality-map-fields {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---- Interactive "Explore industries" ranked bar widget ---- */
+.industry-figure {
+    max-width: var(--fig-max-width);
+    margin: 1.25rem 0 1.5rem;
+}
+
+.industry-widget {
+    border: var(--fig-frame-border);
+    border-radius: var(--fig-frame-radius);
+    background: #fffdf9;
+}
+
+.industry-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: .6rem;
+    padding: .7rem .85rem;
+    border-bottom: 1px solid rgba(7, 16, 19, 0.1);
+}
+
+.industry-toolbar h3 {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+/* Controls only do something with JS; hide until enhanced. */
+.industry-actions {
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .35rem;
+}
+
+.industry-widget.is-enhanced .industry-actions {
+    display: flex;
+    /* Take a full row of its own so the EN/NL buttons stay left-anchored at the
+       same position in both languages. Otherwise the wider Dutch control labels
+       tip the space-between toolbar into wrapping, which jumps the buttons. */
+    flex-basis: 100%;
+    justify-content: flex-start;
+}
+
+.industry-lang {
+    min-width: 2.15rem;
+    min-height: 1.65rem;
+    padding: .1rem .35rem;
+    border: 1px solid var(--fig-accent-border);
+    border-radius: var(--fig-frame-radius);
+    background: #fffdf9;
+    color: var(--fig-accent);
+    font-family: 'Ubuntu Mono', serif;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.industry-lang:hover {
+    border-color: #8C1515;
+}
+
+.industry-lang[aria-pressed="true"] {
+    border-color: #8C1515;
+    background: #8C1515;
+    color: #fffdf9;
+}
+
+.industry-search input,
+.industry-sort-label select {
+    min-height: 1.65rem;
+    padding: .1rem .4rem;
+    border: 1px solid rgba(7, 16, 19, 0.2);
+    border-radius: var(--fig-frame-radius);
+    background: #fffdf9;
+    font-family: 'Ubuntu Mono', serif;
+    font-size: .82rem;
+}
+
+.industry-search input {
+    width: 9rem;
+    max-width: 40vw;
+}
+
+.industry-hint {
+    margin: .6rem .85rem .2rem;
+    color: #5b6468;
+    font-family: 'Ubuntu Mono', serif;
+    font-size: .78rem;
+    line-height: 1.35;
+}
+
+.industry-list {
+    list-style: none;
+    margin: 0;
+    padding: .35rem .85rem .8rem;
+    max-height: 32rem;
+    overflow-y: auto;
+}
+
+.industry-row {
+    display: grid;
+    grid-template-columns: 13rem 1fr 2.8rem;
+    align-items: center;
+    gap: .55rem;
+    padding: .14rem 0;
+}
+
+.industry-row.is-hidden {
+    display: none;
+}
+
+.industry-name {
+    font-size: .82rem;
+    line-height: 1.2;
+}
+
+.industry-name-nl {
+    display: none;
+}
+
+.industry-widget[data-language="nl"] .industry-name-en {
+    display: none;
+}
+
+.industry-widget[data-language="nl"] .industry-name-nl {
+    display: inline;
+}
+
+.industry-track {
+    position: relative;
+    height: .9rem;
+    background: #eee8db;
+    border-radius: .15rem;
+}
+
+.industry-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #5b8db8;
+    border-radius: .15rem;
+}
+
+/* 95% Wilson confidence interval drawn as an error whisker over the bar. */
+.industry-ci {
+    position: absolute;
+    top: 28%;
+    bottom: 28%;
+    border-left: 1px solid #20384a;
+    border-right: 1px solid #20384a;
+    pointer-events: none;
+}
+
+.industry-ci::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #20384a;
+    transform: translateY(-50%);
+}
+
+.industry-mean {
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: var(--industry-mean, 59%);
+    width: 0;
+    border-left: 1px dashed #8C1515;
+}
+
+.industry-value {
+    text-align: right;
+    font-family: 'Ubuntu Mono', serif;
+    font-size: .8rem;
+    font-variant-numeric: tabular-nums;
+    color: #071013;
+}
+
+.industry-row.is-suppressed .industry-track {
+    background: transparent;
+}
+
+.industry-suppressed-note {
+    font-size: .72rem;
+    font-style: italic;
+    color: #8a9296;
+}
+
+.industry-empty {
+    margin: 0 .85rem .8rem;
+    color: #5b6468;
+    font-family: 'Ubuntu Mono', serif;
+    font-size: .82rem;
+}
+
+@media (max-width: 36rem) {
+    .industry-row {
+        grid-template-columns: 9rem 1fr 2.6rem;
+        gap: .4rem;
+    }
+
+    .industry-name {
+        font-size: .76rem;
+    }
+}
